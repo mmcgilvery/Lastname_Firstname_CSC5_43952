@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows
-CND_ARTIFACT_NAME_Debug=cppapplication_1
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/cppapplication_1
+CND_ARTIFACT_NAME_Debug=paycheck
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/paycheck
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows/package
-CND_PACKAGE_NAME_Debug=cppapplication1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/package/cppapplication1.tar
+CND_PACKAGE_NAME_Debug=paycheck.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/package/paycheck.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x_1-Windows
-CND_ARTIFACT_NAME_Release=cppapplication_1
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/cppapplication_1
+CND_ARTIFACT_NAME_Release=paycheck
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/paycheck
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x_1-Windows/package
-CND_PACKAGE_NAME_Release=cppapplication1.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/package/cppapplication1.tar
+CND_PACKAGE_NAME_Release=paycheck.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/package/paycheck.tar
 #
 # include compiler specific variables
 #

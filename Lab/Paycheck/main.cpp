@@ -20,19 +20,16 @@ int main (int argc, char** argv) {
     //Declare Variables
     int payRate, hrsWrkd, payChk;
     //Prompt user for payRate
-    cout <<"Enter rate of pay in the following format x.xx"<< endl;
+    cout << "Enter rate of pay" << endl;
     cin >> payRate;
     //Prompt user for hrsWrkd 
-    cout << "Enter total hours worked using the xxx.xx format"<< endl;
+    cout << "Enter amount of hours worked" << endl;
     cin >> hrsWrkd;
+    //Calculate total pay
     payChk = payRate * hrsWrkd;
-    cout << "If you work "; 
-    cout << hrsWrkd; 
-    cout << "...and have a rate of pay of  ";
-    cout << payRate;
-    cout << " per hour, then your total pay will be ";
-    cout << payChk;
-            
+    cout << "Your total pay is $" << payChk << endl;
+    
+    
     
     
     //Exit stage right
