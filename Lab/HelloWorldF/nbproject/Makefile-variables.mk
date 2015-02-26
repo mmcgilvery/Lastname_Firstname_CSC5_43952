@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows
-CND_ARTIFACT_NAME_Debug=helloworld
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/helloworld
+CND_ARTIFACT_NAME_Debug=helloworldf
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/helloworldf
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows/package
-CND_PACKAGE_NAME_Debug=helloworld.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/package/helloworld.tar
+CND_PACKAGE_NAME_Debug=helloworldf.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/package/helloworldf.tar
 # Release configuration
-CND_PLATFORM_Release=GNU-MacOSX
-CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=hello_world
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/hello_world
-CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=helloworld.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/helloworld.tar
+CND_PLATFORM_Release=Cygwin_4.x_1-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x_1-Windows
+CND_ARTIFACT_NAME_Release=helloworldf
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/helloworldf
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x_1-Windows/package
+CND_PACKAGE_NAME_Release=helloworldf.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x_1-Windows/package/helloworldf.tar
 #
 # include compiler specific variables
 #
