@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-MacOSX
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=hello_world
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/hello_world
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
+CND_PLATFORM_Debug=Cygwin_4.x_1-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows
+CND_ARTIFACT_NAME_Debug=helloworld
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/helloworld
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x_1-Windows/package
 CND_PACKAGE_NAME_Debug=helloworld.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/helloworld.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x_1-Windows/package/helloworld.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
