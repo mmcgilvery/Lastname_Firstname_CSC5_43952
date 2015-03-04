@@ -1,6 +1,6 @@
 /* Matthew McGilvery
  3 - 4 - 15
- #2 from Savitch (Practice Problems); In class completion*/
+ #3 from Savitch (Practice Problems); In class completion*/
 
 //System Libraries
 #include <iostream>

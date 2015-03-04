@@ -1,6 +1,6 @@
 /* Matthew McGilvery
     3 - 4 - 15
-    Homework from Gaddis; In class completion*/
+ #4  (Programming Projects) from Savitch; In class completion*/
 
 //System Libraries
  #include <iostream>
