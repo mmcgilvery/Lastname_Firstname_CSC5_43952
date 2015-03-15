@@ -33,15 +33,15 @@ int main( )    {
     cout << "Are you male(m) or female(f)? Note: Use m or f"<< endl;
     cin >> mf;
     //Calculate
-    BMRFem = 655+4.3*lbs+4.7*hghtIn - 4.7*ageInYr ;
-    BMRMale = 66 + 6.3*lbs + 12.9*hghtIn - 6.8*ageInYr ;
+    BMRFem = 655 + 4.3 * lbs + 4.7 *hghtIn - 4.7*ageInYr;
+    BMRMale = 66 + 6.3 * lbs + 12.9 *hghtIn - 6.8*ageInYr;
     //        Question    if Male           if Female
     nCandy = ((mf=='m')?(BMRMale/calCndy): (BMRFem/calCndy));
     //Output the results
     cout << "Your weight = " << lbs << "(lbs)" << endl;
     cout << "Your height = " << hghtIn << "(inches)" << endl;
     cout << "Your age = " << ageInYr << "(years)" << endl;
-    cout << "Your sex = " <<((mf=='m')?"Male" : "Female" )<< endl;
+    cout << "Your sex = " << ((mf=='m')?"Male" : "Female" ) << endl;
     cout << "You can eat " << nCandy << " candy bars per/day"<< endl;
     //Exit stage right
     
