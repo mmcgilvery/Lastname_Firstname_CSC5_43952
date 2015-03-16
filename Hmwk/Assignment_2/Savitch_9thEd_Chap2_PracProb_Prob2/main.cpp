@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
     float guess, r, guessOk;
     unsigned short n;
     //Request input
-    cout << "We are great calculating square root of a number."<< endl;
+    cout << "We are going to calculate square root of a number."<< endl;
     cout <<"Enter the number, whose square root you'd like to calculate."<< endl;
     cin >> n;
     cout << "Guess at the square root of the number (in decimal form)." << endl;
