@@ -1,11 +1,12 @@
 /* Matthew McGilvery
  3 - 20 - 15
  Professor Lehr
- * Gaddis, CH 3, Programming Challenges, #6
+ * Gaddis, CH 3, Programming Challenges, #5
  */ 
 
 //System Libraries
 #include <iostream>
+#include <iomanip>
 using namespace std;
 //User Libraries
 
@@ -18,18 +19,26 @@ using namespace std;
 //Execution begins here!
 int main(int argc, char** argv) {
     //Declare variables
-    float rplcCos, minIns;
+    unsigned short score1, score2, score3, score4, score5;
+    float average;
     //Input/Assigned Values
-    cout << "We are going to calculate the minimum amount insurance you should get for your property."<< endl;
-    cout << "Input the replacement cost of your property."<< endl;
-    cin >> rplcCos;
-    
-    
+    cout << "We are going to calculate your testing average."<< endl;
+    cout << "Input a test score, followed by the enter key."<< endl;
+    cin >> score1;
+    cout << "Input a test score, followed by the enter key."<< endl;
+    cin >> score2;
+    cout << "Input a test score, followed by the enter key."<< endl;
+    cin >> score3;
+    cout << "Input a test score, followed by the enter key."<< endl;
+    cin >> score4;
+    cout << "Input a test score, followed by the enter key."<< endl;
+    cin >> score5;
     //Process/Calculate
-    minIns = 8e-1 * rplcCos;
-    //Output Everything
-    cout << "The minimum amount of insurance you should get is $" << minIns; 
-    cout << " if your property's replacement cost is $"<< rplcCos << "."<< endl;
+    average = (score1 + score2 + score3 + score4 + score5)/5.0;
+    //Output
+    cout << fixed << setprecision(1) << showpoint;
+    cout << "Your testing average, with scores "<< score1 << ", "<< score2 << ", " << score3 << ", " << score4 << ", and " << score5 << ", " << endl;
+    cout << "is " << average << ".";
     //Exit stage right
     return 0;
 }
