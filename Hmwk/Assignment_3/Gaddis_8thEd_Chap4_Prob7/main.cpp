@@ -19,7 +19,7 @@ using namespace std;
 int main(int argc, char** argv) {
     //Declare variables
     short seconds;
-    float secs, minute; // mass of object and weight of object
+    float minute; // seconds  and minutes
     //Input/Promptings
     cout << "We are going to calculate time." << endl;
     cout << endl;
