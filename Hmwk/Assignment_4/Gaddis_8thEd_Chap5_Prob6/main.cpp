@@ -18,7 +18,7 @@ using namespace std;
 //Execution begins here!
 int main(int argc, char** argv) {
     //Declare variables
-    unsigned short hrStart= 1.0, hrEnd; //years of ocean level risings
+    unsigned short hrStart= 1, hrEnd; //years of ocean level risings
     float dis = 0, miles, mph;// level of ocean
     //Output levels from year 1 to 25
     cout << fixed << setprecision (2) << showpoint;
