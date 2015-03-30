@@ -1,0 +1,6 @@
+Your cable bill from CSC RCC programming class.
+
+Customer Name: s
+Package: a
+Hours Viewed: 12.00
+You owe : 13.95
