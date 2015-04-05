@@ -18,9 +18,9 @@ using namespace std;
 //Execution begins here!
 int main(int argc, char** argv) {
     //Declare variables
-    unsigned short hrStart= 1, hrEnd; //years of ocean level risings
-    float dis = 0, miles, mph;// level of ocean
-    //Output levels from year 1 to 25
+    unsigned short hrStart= 1, hrEnd; //initial hour of travel, last hour of travel
+    float dis = 0, miles, mph;// distance, miles, speed (of car)
+    //Output
     cout << fixed << setprecision (2) << showpoint;
     cout << "We are going to calculate the increase of the ocean level." << endl;
     cout << endl;
@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     cout << "Enter the amount of hours you traveled, followed by the enter key." << endl;
     cin >> hrEnd;
             
-            
+    //Loop
     cout << "Hour                  Miles Voyaged" << endl;
     cout << "------------------------------------" << endl;
     for (hrStart = 1.0 ; hrStart <= hrEnd; hrStart += 1){

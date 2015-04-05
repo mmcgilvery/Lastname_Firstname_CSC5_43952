@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     cout << "Type anything else to choose the other door" << endl;
     cin >> stay;
     //Loop for all possible digits
-    for (int game=1; game <= nGames; game++){;
+    for (int game=1; game <= nGames; game++){
         //Randomly choose your door
         door = rand ()%3 + 1;
         //Randomly choose the door to open
@@ -50,6 +50,7 @@ int main(int argc, char** argv) {
         while (othDoor == doorOpn || othDoor == door);
         //Swap the doors if given the opportunity
         if (stay != 'S' && stay != 's'){ //Use DeMorgan's Law
+            //When found, now swap
             door = othDoor;        
         }
         //Now statistically count how many wins and losses

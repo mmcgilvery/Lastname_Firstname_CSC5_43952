@@ -18,8 +18,8 @@ using namespace std;
 //Execution begins here!
 int main(int argc, char** argv) {
     //Declare variables
-    unsigned short daySt= 1, dayEnd; //years of ocean level risings
-    float money = 1e-2;// level of ocean
+    unsigned short daySt= 1, dayEnd; //day start, ending day
+    float money = 1e-2;// money made
     //Output levels from year 1 to 25
     cout << fixed << setprecision (2) << showpoint;
     cout << "We are going to calculate your incremental penny earnings." << endl;
