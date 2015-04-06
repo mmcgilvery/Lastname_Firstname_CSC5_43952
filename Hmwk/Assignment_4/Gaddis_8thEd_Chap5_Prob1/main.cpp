@@ -28,8 +28,9 @@ int main(int argc, char** argv) {
     for (minNum = 1 ; minNum <= maxNum; minNum++){
         sum += minNum;
     }
-    cout << "The sum of numbers 1 to "<< maxNum << " is " << sum << "."<< endl;
     //Output Everything
+    cout << "The sum of numbers 1 to "<< maxNum << " is " << sum << "."<< endl;
+    
     
     
     
