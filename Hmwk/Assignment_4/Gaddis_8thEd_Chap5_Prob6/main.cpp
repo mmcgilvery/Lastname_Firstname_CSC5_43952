@@ -22,7 +22,6 @@ int main(int argc, char** argv) {
     float dis = 0, miles, mph;// distance, miles, speed (of car)
     //Output
     cout << fixed << setprecision (2) << showpoint;
-    cout << "We are going to calculate the increase of the ocean level." << endl;
     cout << endl;
     cout << "Enter the speed of your vehicle, followed by the enter key." << endl;
     cin >> mph;
