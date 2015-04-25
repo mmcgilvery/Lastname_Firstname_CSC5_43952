@@ -1,6 +1,6 @@
 /* Matthew McGilvery
  4 - 21 - 15
- Gaddis, Chapter 6, Programming Challenges, #5
+ Gaddis, Chapter 6, Programming Challenges, #6
  */
 
 //System Libraries

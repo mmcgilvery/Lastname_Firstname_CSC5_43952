@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
     //Output 
     cout << showpoint << setprecision(2)<< fixed;
     cout << getA(area);
+    return 0;
 }
 
 
