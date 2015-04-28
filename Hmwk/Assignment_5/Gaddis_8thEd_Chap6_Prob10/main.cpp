@@ -14,7 +14,7 @@ using namespace std;
 //Global Constants
 
 //Function Prototypes
-float values(float, float, unsigned short);
+float values2(float, float, unsigned short);
 //Execution Begins Here
 int main(int argc, char** argv) {
     float p, i;
@@ -28,14 +28,14 @@ int main(int argc, char** argv) {
     cout << "Input the number of months you'd like to money to sit, followed by the enter key." << endl;
     cin >> t;
     cout <<  showpoint << fixed << setprecision(2);
-    cout << "Your account's future value is $" << values (p, i, t) << endl;
+    cout << "Your account's future value is $" << values2 (p, i, t) << endl;
     cout << endl;
     } while (k==1);
     return 0;
 }
 
 //Calculate
-float values (float p1, float i1, unsigned short t1){
+float values2 (float p1, float i1, unsigned short t1){
     float f;
     f = p1 * pow((1 + i1), t1);
     return f;
