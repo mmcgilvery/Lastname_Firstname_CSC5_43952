@@ -1,12 +1,16 @@
 /* Matthew McGilvery
  * 5-9-15
- * Project 1
+ * Project 1: A 3 set game of tennis
  */
 
-#include <cstdlib>
+//System Libraries
 #include <iostream>
 
 using namespace std;
+//User Libraries
+
+
+//Global Constants : you  must add const before the variable
 
 //Function Prototypes
 void game1 ();
@@ -15,10 +19,15 @@ void game3 ();
 
 
 int main(int argc, char** argv){
-    game1();
-    game2();
-    game3();
-    cout << "Congratulations on winning three games!" << endl;
+    cout << "Enter the letter s to begin the game" << endl;
+    char start;
+    cin >> start;
+    if(start == 's' || start == 'S'){
+        game1();
+        game2();
+        game3();
+        cout << "Congratulations on winning three games!" << endl;
+    }
     return 0;
 }
 
@@ -37,7 +46,7 @@ void game1(){
             cin >> serve2;
             if(serve2 == 1){
                 cout << "You won the point." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
@@ -46,12 +55,12 @@ void game1(){
                 cin >> serve3;
                 if (serve3 == 1){
                     cout << "Their shot hit the net, so you won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else if (serve3 == 2 ||serve3 == 3){
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
             }
@@ -61,17 +70,16 @@ void game1(){
                 cin >> serve3;
                 if (serve3 == 1 || serve3 == 3){
                     cout << "You won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else {
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
                 
             }
-            
         }
         else if(serve == 2){
             cout << "Your opponent responded with hard flat shot." << endl;
@@ -79,14 +87,15 @@ void game1(){
             cin >> serve2;
             if(serve2 == 2){
                 cout << "You won the point with a drop shot." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 1 || serve2 == 3){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
             
         }
         else if(serve == 3){
@@ -95,31 +104,28 @@ void game1(){
             cin >> serve2;
             if(serve2 == 1 || serve2 == 3){
                 cout << "You won the point with a down the line winner." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
         }
     }
     if(points == 60){
         cout << "You won a game!" << endl;
         game = 1 + game;
-        cout << "Your total amount of games is " << game << endl;
+        cout << "Your total amount of games is 1." << endl;
     }
     else {
         cout << "You lost the game"<< endl;
-        cout << "Your total amount of games is " << game << endl;
     }
 }
 void game2(){
-    unsigned short gm = 0, points = 0, serve, serve2, serve3;
-    cout << "We are going to play a game of tennis." << endl;
-    cout << "The instructions to the game can be found in the attached PDF." << endl;
-    cout << "Enjoy" << endl;
+    unsigned short game = 0, points = 0, serve, serve2, serve3;
     for (unsigned int k = 1; k <= 4; k++){
         cout << "Please enter the type of serve you would like to hit, followed by the enter key." << endl;
         cin >> serve;
@@ -129,7 +135,7 @@ void game2(){
             cin >> serve2;
             if(serve2 == 1){
                 cout << "You won the point." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
@@ -138,12 +144,12 @@ void game2(){
                 cin >> serve3;
                 if (serve3 == 1){
                     cout << "Their shot hit the net, so you won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else if (serve3 == 2 ||serve3 == 3){
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
             }
@@ -153,17 +159,16 @@ void game2(){
                 cin >> serve3;
                 if (serve3 == 1 || serve3 == 3){
                     cout << "You won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else {
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
                 
             }
-            
         }
         else if(serve == 2){
             cout << "Your opponent responded with hard flat shot." << endl;
@@ -171,14 +176,15 @@ void game2(){
             cin >> serve2;
             if(serve2 == 2){
                 cout << "You won the point with a drop shot." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 1 || serve2 == 3){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
             
         }
         else if(serve == 3){
@@ -187,28 +193,28 @@ void game2(){
             cin >> serve2;
             if(serve2 == 1 || serve2 == 3){
                 cout << "You won the point with a down the line winner." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
         }
     }
     if(points == 60){
         cout << "You won a game!" << endl;
-        gm = 1 + gm;
-        cout << "Your total amount of games is " << gm << endl;
+        game = 1 + game;
+        cout << "Your total amount of games is 2."<< endl;
     }
     else {
         cout << "You lost the game"<< endl;
-        cout << "Your total amount of games is " << gm << endl;
     }
 }
 void game3(){
-    unsigned short gm = 0, points = 0, serve, serve2, serve3;
+    unsigned short game = 0, points = 0, serve, serve2, serve3;
     cout << "We are going to play a game of tennis." << endl;
     cout << "The instructions to the game can be found in the attached PDF." << endl;
     cout << "Enjoy" << endl;
@@ -221,7 +227,7 @@ void game3(){
             cin >> serve2;
             if(serve2 == 1){
                 cout << "You won the point." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
@@ -230,12 +236,12 @@ void game3(){
                 cin >> serve3;
                 if (serve3 == 1){
                     cout << "Their shot hit the net, so you won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else if (serve3 == 2 ||serve3 == 3){
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
             }
@@ -245,17 +251,16 @@ void game3(){
                 cin >> serve3;
                 if (serve3 == 1 || serve3 == 3){
                     cout << "You won the point!" << endl;
-                    points = 15 * k;
+                    points += 15;
                     cout << "Your point total is "<< points << endl;
                 }
                 else {
                     cout << "You lost the point." << endl;
-                    points = 0;
+                    points += 0;
                     cout << "Your point total is "<< points << endl;
                 }
                 
             }
-            
         }
         else if(serve == 2){
             cout << "Your opponent responded with hard flat shot." << endl;
@@ -263,14 +268,15 @@ void game3(){
             cin >> serve2;
             if(serve2 == 2){
                 cout << "You won the point with a drop shot." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 1 || serve2 == 3){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
             
         }
         else if(serve == 3){
@@ -279,23 +285,22 @@ void game3(){
             cin >> serve2;
             if(serve2 == 1 || serve2 == 3){
                 cout << "You won the point with a down the line winner." << endl;
-                points = 15 * k;
+                points += 15;
                 cout << "Your point total is "<< points << endl;
             }
             else if(serve2 == 2){
                 cout << "You lost the point" << endl;
-                points = 0;
+                points += 0;
                 cout << "Your point total is "<< points << endl;
             }
+            points += points;
         }
     }
     if(points == 60){
         cout << "You won a game!" << endl;
-        gm = 1 + gm;
-        cout << "Your total amount of games is " << gm << endl;
+        cout << "Your total amount of games is 3" << endl;
     }
     else {
         cout << "You lost the game"<< endl;
-        cout << "Your total amount of games is " << gm << endl;
     }
 }
