@@ -9,43 +9,43 @@
 using namespace std;
 
 //User Libraries
-#include <table.h>
+#include "Table.h"
 
 
 //Global Constants
 //Function Prototypes
-table **filAray(int, int);
-void prntAry(const table *);
-void destroy(const table *);
+Table *filAray(int, int);
+void prntAry(const Table *);
+void destroy(const Table *);
 
 //Execution Begins Here
 
 int main(int argc, char** argv)
     {
     //Create the array
-    int rows = 19, cols = 19;
-    int **array = filAray(rows, cols);
+    int rows = 10, cols = 11;
+    Table *array = filAray(rows, cols);
     //Print the array
-    prntAry(array, rows, cols);
+    prntAry(array);
     //Deallocate the array
-    destroy(array, rows);
+    destroy(array);
     //Exit stage right
     return 0;
     }
 
-void destroy(table *a)
+void destroy(Table *a)
     {
     //Loop and destroy the columns
     for (int i = 0; i < a -> rows; i++)
         {
         delete [] a-> data[i];
-        
+
         //Destroy the rows
         delete []a;
         }
     }
 
-void prntAry(table *a)
+void prntAry(Table *a)
     {
     //Print the headings
     cout << "THIS IS YOUR MULTIPLICATION TABLE!!!" << endl;
@@ -67,27 +67,27 @@ void prntAry(table *a)
         }
     }
 
-table *filAray(int row, int col)
+Table *filAray(int row, int col)
     {
     //Allocate the table
-    table *table = new table;
-    table -> cols= col;
-    table -> rows = row;
+    Table *table = new Table;
+    table->cols = col;
+    table->rows = row;
     //Create the number of rows
-    table -> data = new int*[table -> rows];
+    table->data = new int*[table->rows];
     //Loop and create the columns
-    for (int i = 0; i < table -> rows; i++)
+    for (int i = 0; i < table->rows; i++)
         {
-        table -> data  = new int[table -> cols];
+        table->data[i] = new int[table->cols];
         }
     //Fill the array
-    for (int i = 0; i < table -> rows; i++)
+    for (int i = 0; i < table->rows; i++)
         {
-        for (int j = 0; j < table -> cols; j++)
+        for (int j = 0; j < table->cols; j++)
             {
-            array[i][j] = i*j;
+            table->data[i][j] = i*j;
             }
         }
     //Return the array
-    return array;
+    return table;
     }

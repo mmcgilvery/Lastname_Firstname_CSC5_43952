@@ -6,7 +6,7 @@
 #ifndef TABLE_H
 #define	TABLE_H
 
-struct table{
+struct Table{
     int rows;
     int cols;
     int **data;
