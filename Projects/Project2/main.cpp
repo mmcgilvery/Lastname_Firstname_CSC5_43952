@@ -18,7 +18,7 @@ using namespace std;
 void game1(); // Game 1
 void game2(); // Game 2
 void game3(); // Game 3 : Final Game of tennis
-int binSrch(int *, int, int); // Binary search
+int binSrch(int *, const unsigned short, const unsigned short &); // search
 
 int main(int argc, char** argv)
 {   int game;
@@ -431,59 +431,56 @@ void game3()
         
         cout << "You lost the game!" << endl;
         game = 0;
-        cout << "Your total amount of games is 0." << endl;
+        cout << "Your total amount of games is 0." << endl;//All or nothing: You must win all 3 games to be victorious
     }
-    ofstream file;
-    file.open("Score.data");
-    string name;
+    ofstream file; //Introducing file, ofstream variable to accept data
+    string name; // Introducing name, string variable to accept a name
+    file.open("Score.data"); //File Manipulation
     cout << "Enter your first name." << endl;
     cin >> name;
     if (game == 3)
     {
-        cout << name << ", you won a game!" << endl;
+        cout << name << ", you won the final game!" << endl;
         file << "Your total amount of games is 3" << endl;
-        int myArray[] = {0,1,2,3};
-        int *array = nullptr;
-        array = &myArray[3];
-        int results = binSrch(myArray, 4, 3);
-        if (results == 3){
-            cout << "You won!" << endl;
+        const unsigned short SIZE = 4, ideal = 3;//Amount of space within the array, and the ideal number for the bin search
+        int myArray[SIZE] = {0, 1, 2, 3};
+        int results = binSrch(myArray, SIZE, ideal);
+        if (results == 3){// If the player won, read "winner" date into file.
+            file << name <<", you won!" << endl;
             file << "Thank you for playing tennis with me." << endl;
-            file.close();
+            file.close(); // Close File
             cout << "A file containing your results is now available." << endl;
         }
     }
-    else
+    else 
+     //In the case of perhaps entering a wrong key
     {
-        file << name << ", you lost the game :-/" << endl;
+        file << name << ", you lost the game :-/" << endl; // Otherwise, read "loser" date into file.
         file << "Thank you for playing tennis with me." << endl;
         file.close();
         cout << "A file containing your results is now available." << endl;
     }
 }
 
-int binSrch(int *nlst, int ncnt, int target)
-{
-    int first;
-    int mid;
-    int last;
-    first = 0;
-    last  = ncnt;
-    
-    while ( first <= last ) {
-        mid = (first+last)/2;
-        if ( target > nlst[mid] ) {
-            first = mid + 1;
-            continue;
+int binSrch(int *array, const unsigned short numElems, const unsigned short &value) //Binary search with pointer, return value, bool, and array usage
+    {
+    int first = 0; // First array element 
+            int last = numElems - 1;  
+            int middle;
+            int position = -1; 
+    bool found = false; // Flag 
+    while (!found && first <= last)
+        {
+        middle = (first + last) / 2; // Calculate midpoint 
+        if (array[middle] == value) // If value is found at mid 
+            {
+            found = true;
+            position = middle;
+            }
+        else if (array[middle] > value) // If value is in lower half 
+            last = middle - 1;
+        else if (array[middle] < value)
+            first = middle + 1; // If value is in upper half 
         }
-        
-        if ( target < nlst[mid] ) {
-            last = mid - 1;
-            continue;
-        }
-        
-        return mid;
-    }
-    
-    return -1;
-}
+    return position;
+    } 
