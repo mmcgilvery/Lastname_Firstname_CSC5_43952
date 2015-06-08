@@ -1,6 +1,6 @@
 /* Matthew McGilvery
- * 5-9-15
- * Project 1: A 3 game set of tennis
+ * 6-8-15
+ * Project 2: A 3 game set of tennis
  */
 
 //System Libraries
