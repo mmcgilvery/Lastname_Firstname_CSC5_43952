@@ -470,7 +470,7 @@ int binSrch(int *array, const unsigned short numElems, const unsigned short &val
     int first = 0; // First array element 
     int last = numElems - 1;
     int middle;
-    int position = -1;
+    int positn = -1;
     bool found = false; // Flag 
     while (!found && first <= last)
         {
@@ -478,12 +478,12 @@ int binSrch(int *array, const unsigned short numElems, const unsigned short &val
         if (array[middle] == value) // If value is found at mid 
             {
             found = true;
-            position = middle;
+            positn = middle;
             }
         else if (array[middle] > value) // If value is in lower half 
             last = middle - 1;
         else if (array[middle] < value)
             first = middle + 1; // If value is in upper half 
         }
-    return position;
+    return positn;
     } 
